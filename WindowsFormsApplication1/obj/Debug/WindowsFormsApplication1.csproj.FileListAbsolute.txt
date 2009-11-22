@@ -10,3 +10,4 @@ C:\Users\david\Documents\Visual Studio 2008\Projects\platinumEditor\WindowsForms
 C:\Users\david\Documents\Visual Studio 2008\Projects\platinumEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\david\Documents\Visual Studio 2008\Projects\platinumEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\david\Documents\Visual Studio 2008\Projects\platinumEditor\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.NewWorld.resources
+C:\Users\david\Documents\Visual Studio 2008\Projects\platinumEditor\WindowsFormsApplication1\bin\Debug\lua51.dll

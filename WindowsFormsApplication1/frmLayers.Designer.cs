@@ -30,9 +30,9 @@
         {
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,14 +58,14 @@
             this.panel1.Size = new System.Drawing.Size(284, 29);
             this.panel1.TabIndex = 1;
             // 
-            // button1
+            // button3
             // 
-            this.button1.Location = new System.Drawing.Point(234, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "New";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(47, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -76,14 +76,14 @@
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button1
             // 
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(47, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(234, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(47, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "New";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmLayers
             // 

@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
         public frmEditor()
         {
             InitializeComponent();
+            
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -42,12 +43,12 @@ namespace WindowsFormsApplication1
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
 
-                    editor.wrld.saveworld(sfd.FileName);
+                    editor.wrld.save(sfd.FileName);
                 }
             }
             else
             {
-                editor.wrld.saveworld(editor.wrld.fname);
+                editor.wrld.save(editor.wrld.fname);
             }
         }
 
@@ -58,7 +59,7 @@ namespace WindowsFormsApplication1
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 frmWorld editor = (frmWorld)this.MdiChildren[0];
-                editor.wrld.saveworld(sfd.FileName);
+                editor.wrld.save(sfd.FileName);
             }
         }
 
@@ -73,7 +74,13 @@ namespace WindowsFormsApplication1
             ofd.Filter = "Lua World File|*.lua";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                
+                frmWorld editor = new frmWorld();
+                editor.wrld.load(ofd.FileName);
+                editor.MdiParent = this;
+                editor.picWorld.Width = editor.wrld.width;
+                editor.picWorld.Height = editor.wrld.height;
+                editor.Show();
+                editor.renderworld();
             }
         }
     }

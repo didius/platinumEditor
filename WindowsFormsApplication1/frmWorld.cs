@@ -26,6 +26,25 @@ namespace WindowsFormsApplication1
             world_index = -1;
            
         }
+        public void renderworld()
+        {
+            picWorld.Image = new Bitmap(wrld.width, wrld.height);
+            Graphics g = Graphics.FromImage(picWorld.Image);
+            foreach (ArrayList path in wrld.collision_segment)
+            {
+                Point previous = new Point(-1, -1);
+                foreach (Point p in path)
+                {
+                    Console.Write(p.ToString());
+                    if (previous.X != -1 && previous.Y != -1)
+                    {
+                        g.DrawLine(new Pen(Color.White), previous, p);
+                        picWorld.Refresh();
+                    }
+                    previous = p;
+                }
+            }
+        }
 
         void frmWorld_KeyPress(object sender, KeyPressEventArgs e)
         {
