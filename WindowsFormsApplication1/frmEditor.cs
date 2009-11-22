@@ -20,17 +20,17 @@ namespace WindowsFormsApplication1
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmWorld wrl = new frmWorld();
-            NewWorld nw = new NewWorld();
-            if (nw.ShowDialog() == DialogResult.OK)
-            {
-                wrl.picWorld.Image = new Bitmap(nw.height, nw.width);
-                wrl.picWorld.Width = nw.width;
-                wrl.picWorld.Height = nw.height;
-                wrl.wrld.height = nw.height;
-                wrl.wrld.width = nw.width;
+            //NewWorld nw = new NewWorld();
+            //if (nw.ShowDialog() == DialogResult.OK)
+            //{
+                //wrl.picWorld.Image = new Bitmap(nw.height, nw.width);
+                //wrl.picWorld.Width = nw.width;
+                //wrl.picWorld.Height = nw.height;
+                wrl.wrld.height = 100;
+                wrl.wrld.width = 100;
                 wrl.MdiParent = this;
                 wrl.Show();
-            }
+            //}
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,8 +77,8 @@ namespace WindowsFormsApplication1
                 frmWorld editor = new frmWorld();
                 editor.wrld.load(ofd.FileName);
                 editor.MdiParent = this;
-                editor.picWorld.Width = editor.wrld.width;
-                editor.picWorld.Height = editor.wrld.height;
+                //editor..Width = editor.wrld.width;
+                //editor.pipicWorldcWorld.Height = editor.wrld.height;
                 editor.Show();
                 editor.renderworld();
             }
