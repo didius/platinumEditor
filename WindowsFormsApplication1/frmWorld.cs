@@ -71,7 +71,7 @@ namespace WindowsFormsApplication1
                 Point previous = new Point(-1, -1);
                 foreach (Point p in path)
                 {
-                    Console.Write(p.ToString());
+                    //Console.Write(p.ToString());
                     if (previous.X != -1 && previous.Y != -1)
                     {
                         Point render1 = new Point(previous.X + this.camera_x, previous.Y + this.camera_y);
@@ -124,7 +124,7 @@ namespace WindowsFormsApplication1
             {
                 //Graphics g = Graphics.FromImage(picWorld.Image);
                 //g.DrawLine(new Pen(Color.White), px, py, e.X, e.Y);
-                Console.WriteLine("draw line");
+                //Console.WriteLine("draw line");
                 px = e.X;
                 py = e.Y;
                 ((ArrayList)wrld.collision_segment[this.world_index]).Add(new Point(px - this.camera_x , py - this.camera_y));
